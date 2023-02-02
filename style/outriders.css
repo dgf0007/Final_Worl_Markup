@@ -1,0 +1,493 @@
+/*************** Hoja de estilos de outriders *****************/
+
+/*************** Estilo general *******************/
+
+/*************** Fuentes principales *************/
+
+@font-face {
+    font-family: 'titulos';
+    src: url(../fonts/ZingRustD2Demo-Base.otf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(../fonts/MusticaPro-SemiBold.otf);
+}
+
+/*************** Fondo principal ***************/
+
+body {
+    background-image: url(../image/pages-background-f520931b4d892e0bd32be942a01a9b09.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: auto;
+}
+
+/************ Estilo para hero section ************/
+
+#hero {
+    background-image: url(../image/fondo.jpg);
+    background-size: cover;
+    background-position: 66%;
+    position: relative;
+    height: 100vh;
+    border-bottom: tomato;
+}
+
+#hero a {
+    color: white;
+}
+
+#it2 {
+    position: absolute;
+    top: 500px;
+    left: 750px;
+    padding: 15px;
+    border-radius: 17px;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: texto¡;
+}
+
+#it2:hover {
+    background-image: url("../image/modal-back.jpg");
+    box-shadow: 3px 3px 3px rgba(0, 0, 0.494);
+}
+
+#hero .fa-arrow-up {
+    position: fixed;
+    font-size: 20px;
+    bottom: 40px;
+    right: 40px;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(26, 26, 26);
+    padding: 10px;
+    font-family: texto;
+}
+
+/********** Barra de navegación **************/
+
+nav {
+    font-family: titulos;
+    position: sticky;
+    top: 0%;
+    z-index: 99;
+    opacity: 0.7;
+    color: black;
+}
+
+.topnav {
+    background-image: url(../image/1065659.jpg);
+    position: relative;
+    font-family: titulos;
+}
+
+.topnav a {
+    /* Cambiar color de la barra de navegación */
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #161616;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 25px;
+}
+
+a:hover {
+    color: rgb(87, 87, 87)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/****** Introduction Style *****/
+
+#introduction {
+    color: white;
+    padding: 4%;
+    font-family: texto;
+    font-size: 1.4em;
+    text-align: justify;
+    border-bottom: 3px solid rgb(27, 182, 78)
+}
+
+/*******Introducion First Letter.....*****/
+
+#introduction p:first-letter {
+    font-size: 2em;
+    color: rgb(116, 10, 216);
+}
+
+#introduction h1 {
+    font-family: runas;
+    /*******.....menos para h1*****/
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#imagen1 {
+    width: 50%;
+    float: left;
+    margin: 40px;
+}
+
+/****** Estyle of gallery*****/
+
+.slider h1 {
+    font-family: runas;
+
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    padding: 20px;
+}
+
+.slider {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    /* border: 2px red solid; */
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+    animation-timing-function: ease-in;
+}
+
+.slider ul:hover {
+    opacity: 1;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+
+    125% {
+        margin-left: -400%;
+    }
+    150% {
+        margin-left: -400%;
+    }
+}
+
+/***** Style of Maps ****/
+
+#maps h1 {
+    text-align: center;
+    font-family: titulos;
+    color: white;
+}
+
+#maps {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/**** Footer Style ****/
+
+footer {
+    background-color: #000000;
+    padding: 40px 25%;
+    box-sizing: border-box;
+    color: white;
+}
+
+footer hr {
+    margin-top: 30px;
+}
+
+footer .fa {
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+footer .fa:hover {
+    opacity: 0.7;
+}
+
+/******** Style for Contact */
+
+.contenedor {
+    padding: 90px 0px;
+}
+
+.contenedor .form .form-header .form-tittle {
+    font-weight: normal;
+    font-family: titulos;
+    color: #a218f2;
+    text-align: center;
+    padding-bottom: 14px 0;
+}
+
+.contenedor .form .form-header .form-tittle span {
+    color: #fff;
+}
+
+.contenedor .form {
+    background: rgba(134, 134, 134, 0.6);
+    width: 98%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.contenedor .form .form-label {
+    display: block;
+    color: #6906a1;
+    font-size: 16px;
+    font-family: texto;
+    position: relative;
+}
+
+.contenedor .form .form-input, .form-textarea {
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #6906a1;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    font-family: texto;
+}
+
+.contenedor .form .form-textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.contenedor .form .btn-submit {
+    width: 100%;
+    font-style: Roboto;
+    outline: none;
+    background: #a218f2;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 10px;
+}
+
+.contenedor .form .btn-submit:hover {
+    background: #6906a1;
+}
+
+/********** Style of Weapons *********/
+
+#table1 {
+    text-align: center;
+    border: 5px solid lightgray;
+    border-bottom: 5px solid rgb(7, 91, 201);
+    border-right: 5px solid rgb(7, 91, 201);
+    margin-left: 5%;
+    margin-right: 5%;
+    empty-cells: hide;
+    width: 80.7%;
+    border-spacing: 4px;
+}
+
+#table1 td {
+    width: 10%;
+    font-family: texto;
+}
+
+#table1 caption {
+    caption-side: bottom;
+    color: rgb(192, 98, 221);
+    font-family: texto;
+    text-decoration: underline;
+    padding-bottom: 2.2%;
+    
+}
+
+#table1 thead tr:first-child {
+    background-color: #3c3c3c;
+    color: white;
+}
+
+#table1 tr:nth-child(even) {
+    background-color: #242424;
+    color: white;
+}
+
+#table1 tr:nth-child(odd) {
+    background-color: #b3b3b3;
+    color: white;
+}
+
+#table1 tr:nth-child(even):hover {
+    background-color: #b3b3b3;
+}
+
+#table1 tr:nth-child(odd):hover {
+    background-color: #242424;
+}
+
+#t1 {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin-left: 6%;
+    font-family: titulos;
+    text-shadow: 1px 1px 2px rgb(170, 19, 184);
+}
+
+#list {
+    margin-top: 2%;
+    background-color: #1a1a1a;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+    list-style-position: inside;
+    color: white;
+    border-radius: 25px;
+    list-style-image: url(/image/favicon-16x16.png);
+}
+
+
+#list li:hover {
+    background-color: #a218f2;
+}
+
+@media only screen and (max-width:1000px) {
+
+    #imagen1,
+    .half {
+        width: 100%;
+    }
+
+    footer {
+        padding: 40px 10%;
+    }
+
+    @media only screen and (max-width: 500px) {
+        #container {
+            width: 100%;
+        }
+
+        .cuartos {
+            width: 90%;
+            margin: 5%;
+            /******para que tenga hueco y quede en medio*****/
+        }
+
+        #imagen1 {
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+
+        .topnav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+}
